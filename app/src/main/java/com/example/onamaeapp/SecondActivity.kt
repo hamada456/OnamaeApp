@@ -15,8 +15,8 @@ class SecondActivity : AppCompatActivity() {
         val tvName :TextView = findViewById(R.id.tvName)
         val btnBack: Button = findViewById(R.id.btnBack)
 
-        //値を取り出す
-        //
+        //値を取り出す(受け取る)
+        //val text = intent.getStringExtra("KEY")
         val myName = intent.getStringExtra("MY_NAME")
         tvName.text = myName + "さん"
 

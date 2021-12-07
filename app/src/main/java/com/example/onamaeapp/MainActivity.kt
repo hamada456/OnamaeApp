@@ -15,9 +15,11 @@ class MainActivity : AppCompatActivity() {
         val btnStart: Button = findViewById(R.id.btnStart)
 
         btnStart.setOnClickListener {
-            val intent = Intent(this,SecondActivity::class.java)
-            //値を渡す val et:EditText = "A"
             //val intent = Intent(this,遷移先::class.java)
+            val intent = Intent(this,SecondActivity::class.java)
+
+            //値を渡す val et:EditText「変数名」 = "A"
+            //intent.putExtra("KEY",変数名)
             intent.putExtra("MY_NAME",et.text.toString())
 
             startActivity(intent)
