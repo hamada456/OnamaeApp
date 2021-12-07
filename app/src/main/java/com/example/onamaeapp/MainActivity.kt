@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         btnStart.setOnClickListener {
             val intent = Intent(this,SecondActivity::class.java)
             //値を渡す val et:EditText = "A"
+            //val intent = Intent(this,遷移先::class.java)
             intent.putExtra("MY_NAME",et.text.toString())
 
             startActivity(intent)
